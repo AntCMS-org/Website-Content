@@ -1,5 +1,5 @@
 pageOrder:
   index: 1
-  plugins: 2
-  Documentation: 3
-  development: 4
+  Documentation: 2
+  development: 3
+  plugins: 4
