@@ -32,6 +32,6 @@ Next, you'll want to start the DDEV container for AntCMS.
 ddev start
 ```
 
-### And that's it!
+### And That's It!
 
 Assuming you ran into no errors, you should now find your AntCMS developer instance available at [https://antcms.ddev.site](https://antcms.ddev.site).

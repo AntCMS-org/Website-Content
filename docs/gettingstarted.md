@@ -6,7 +6,7 @@ Description: Getting started with AntCMS.
 
 # Getting Started with AntCMS
 
-Due to it's simplistic nature, getting started with AntCMS is very easy compared to some CMS solutions. Simply follow the steps we have laid out below, and you'll be off to the races!
+Due to its simplistic nature, getting started with AntCMS is very easy compared to some CMS solutions. Simply follow the steps we have laid out below, and you'll be off to the races!
 
 ---
 
@@ -39,7 +39,7 @@ Description: Getting started with AntCMS.
 When creating your page header, be sure to put a space after the ':', omitting it will cause issues when AntCMS tries to fetch the header info.
 Valid: `Title: This is a Title` invalid: `Title:This is a Title`.
 
-If you find you need to re-order items in the navbar or rename a navbar drop down, you may do so by creating a `meta.yaml` file inside the directory.
+If you find you need to reorder items in the navbar or rename a navbar drop down, you may do so by creating a `meta.yaml` file inside the directory.
 Below are example contents for one of these files:
 ```yaml
 # Sets the title of the dropdown menu

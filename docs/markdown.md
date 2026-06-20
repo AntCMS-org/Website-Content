@@ -109,7 +109,7 @@ Task lists:
 
 Emoji support! :joy:
 
-And finally.. embedded content, by putting a URL on a line of it's own, the content will automatically be embeded in the page.
+And finally… embedded content, by putting a URL on a line of it's own, the content will automatically be embeded in the page.
 Note: support depends on what site the content is on, but AntCMS will always fallback to a regular link
 
 https://www.youtube.com/watch?v=dQw4w9WgXcQ

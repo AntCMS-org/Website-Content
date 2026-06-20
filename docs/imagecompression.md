@@ -12,7 +12,7 @@ It will do this when you have the GD PHP extension installed and asset delivery 
 
 Images are compressed a single time with the compressed version being retained in AntCMS's cache. The original file remains untouched.
 
-## Supported Image types
+## Supported Image Types
 
  - JPEG / JPG
  - PNG
@@ -23,7 +23,7 @@ Images are compressed a single time with the compressed version being retained i
 Image compression is automatically enabled for all supported images when using AntCMS.
 All images will be compressed using the quality level defined in your configuration file (85% by default).
 
-### Specifying the quality level.
+### Specifying the Quality Level.
 
 If you want to use a specific quality level on an image rather than using a broad default, you may do so by providing an "imageQuality" GET parameter.
 

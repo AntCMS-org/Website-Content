@@ -7,7 +7,7 @@ NavItem: true
 
 # AntCMS Plugins
 
-Looking to extend AntCMS's capabilities via plugins? This page is intended to list known AntCMS plugins so you can extend it's functionality! 
+Looking to extend AntCMS's capabilities via plugins? This page is intended to list known AntCMS plugins so you can extend its functionality! 
 
 ## Official Plugins
 

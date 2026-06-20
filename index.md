@@ -1,7 +1,7 @@
 --AntCMS--
 Title: AntCMS
 Author: The AntCMS Team
-Description: AntCMS is a very fast CMS which provides easy SEO, low system resource usage, and makes writing content easy utilizing markdown. 
+Description: AntCMS is a very fast CMS which provides easy SEO, low system resource usage, and makes writing content easy utilizing Markdown. 
 NavItem: true
 --AntCMS--
 
@@ -19,7 +19,7 @@ AntCMS is a flat-file CMS that's built to have very low system resource usage wh
  - Easy SEO with automatic handling of the robots.txt and sitemap files.
  - Automatic usage of ETags when serving assets to allow client-side caching.
  - Support for custom themes.
- - Per-theme additional styles applied to markdown content.
+ - Per-theme additional styles applied to Markdown content.
  - Plugin support.
  - Uses Markdown to write content and YAML for the infrequently needed configuration setup.
 
