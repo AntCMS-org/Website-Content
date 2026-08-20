@@ -5,22 +5,24 @@ Description: A list of plugins created for AntCMS.
 NavItem: true
 --AntCMS--
 
-# AntCMS Plugins
+# 🧩 AntCMS Plugins
 
-Looking to extend AntCMS's capabilities via plugins? This page is intended to list known AntCMS plugins so you can extend its functionality! 
+Looking to extend AntCMS's capabilities? This page serves as a directory for known plugins designed to expand and enhance the platform's functionality.
 
-## Official Plugins
+---
 
-These plugins are officially provided and supported by the AntCMS team.
+## ✅ Official Plugins
+*These extensions are officially maintained and supported by the AntCMS team.*
 
-### Content Management
+### 📂 Content Management
+- **[GitHub-Sync](https://github.com/AntCMS-org/GitHub-Sync)**: Automatically sync a GitHub repository to your AntCMS instance using cron jobs. This is the primary method used for the official [AntCMS website content](https://github.com/AntCMS-org/Website-Content).
 
-- [GitHub-Sync](https://github.com/AntCMS-org/GitHub-Sync) is a plugin that can be used to automatically sync a GitHub repository to your AntCMS instance utilizing the cronjob. The official AntCMS website uses exactly that and syncs from the [AntCMS-org/Website-Content](https://github.com/AntCMS-org/Website-Content) repository.
+### 🛠️ Developer Tools & Misc
+- **[Example-Plugin](https://github.com/AntCMS-org/Example-Plugin)**: A reference implementation designed to help developers understand the architecture and best practices for building their own AntCMS plugins.
 
-### Misc
+---
 
-- [Example-Plugin](https://github.com/AntCMS-org/Example-Plugin) is a simple plugin that developers can use as reference for developing their own AntCMS plugins.
+## 🚀 Community Contributions
+*Have a plugin you'd like to share with the community?*
 
-# Unofficial Plugins
-
-Have a plugin that you would like to see here? Create a pull request over on the [Website-Content](https://github.com/AntCMS-org/Website-Content) repository!
+If you have developed an unofficial plugin or want to suggest one, please submit a pull request to the [Website-Content](https://github.com/AntCMS-org/Website-Content) repository!

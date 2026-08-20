@@ -4,57 +4,71 @@ Author: The AntCMS Team
 Description: Learn about automated image compression functionally in AntCMS.
 --AntCMS--
 
-
 # Image Compression
 
-AntCMS has built in support for automatically compressing images.
-It will do this when you have the GD PHP extension installed and asset delivery is running through AntCMS rather than being handled by your webserver.
+AntCMS provides built-in functionality to automatically compress images upon delivery. 
 
-Images are compressed a single time with the compressed version being retained in AntCMS's cache. The original file remains untouched.
+### How it Works
 
-## Supported Image Types
+This feature is automatically enabled when:
+1. The **GD PHP extension** is installed on your server.
+2. Asset delivery is handled directly by AntCMS (rather than exclusively by the web server).
 
- - JPEG / JPG
- - PNG
- - WEBP
+To ensure performance, images are compressed and the result is stored in the AntCMS cache to be re-used upon future requests; **your original files remain untouched.**
 
-## Usage
+---
 
-Image compression is automatically enabled for all supported images when using AntCMS.
-All images will be compressed using the quality level defined in your configuration file (85% by default).
+## Supported Formats
 
-### Specifying the Quality Level.
+AntCMS automatically detects and compresses the following formats:
+*   JPEG / JPG
+*   PNG
+*   WEBP
 
-If you want to use a specific quality level on an image rather than using a broad default, you may do so by providing an "imageQuality" GET parameter.
+## Default Settings
 
-Examples:
+By default, all supported images are processed using a quality level of **85%**. This provides an ideal balance between visual fidelity and file size, though this value may be changed via the config file.
 
-- **Very High** (95%): `/assets/exampleImage.jpg?imageQuality=veryhigh`
-- **High** (80%): `/assets/exampleImage.jpg?imageQuality=high`
-- **Medium** (65%): `/assets/exampleImage.jpg?imageQuality=medium`
-- **Low** (25%): `/assets/exampleImage.jpg?imageQuality=low`
-- **Very Low** (0%): `/assets/exampleImage.jpg?imageQuality=verylow`
+---
 
+## Custom Quality Overrides
 
-## Default
+If you require a specific quality level for a particular image rather than the global default, you can override it by appending a `imageQuality` GET parameter to your asset URL.
+
+| Level | Value | Example URL |
+| :--- | :--- | :--- |
+| **Very High** | 95% | `/assets/image.jpg?imageQuality=veryhigh` |
+| **High** | 80% | `/assets/image.jpg?imageQuality=high` |
+| **Medium** | 65% | `/assets/image.jpg?imageQuality=medium` |
+| **Low** | 25% | `/assets/image.jpg?imageQuality=low` |
+| **Very Low** | 0% | `/assets/image.jpg?imageQuality=verylow` |
+
+---
+
+## Visual Comparison
+
+*Note: The following images demonstrate the effect of different quality parameters.*
+
+### Default (85%, configurable)
+
 ![Default quality](/assets/exampleImage.jpg)
 
-### Very High
+### Very High (95%)
 
 ![Very high quality preset](/assets/exampleImage.jpg?imageQuality=veryhigh)
 
-### High
+### High (80%)
 
 ![High quality preset](/assets/exampleImage.jpg?imageQuality=high)
 
-### Medium
+### Medium (65%)
 
-![Medium quality preset](/assets/exampleImage.jpg?imageQuality=low)
+![Medium quality preset](/assets/exampleImage.jpg?imageQuality=medium)
 
-### Low
+### Low (25%)
 
-![Low quality preset](/assets/exampleImage.jpg?imageQuality=verylow)
+![Low quality preset](/assets/exampleImage.jpg?imageQuality=low)
 
-### Very Low
+### Very Low (0%)
 
 ![Very low quality preset](/assets/exampleImage.jpg?imageQuality=verylow)

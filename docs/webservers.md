@@ -6,29 +6,36 @@ Description: Learn about what Markdown syntax and features AntCMS supports.
 
 # Compatible Web Servers
 
+AntCMS is designed to be flexible across various server environments. Below are the details for supported web servers and deployment options.
+
 ---
 
 ## Apache, Litespeed, and OpenLitespeed
+These servers are compatible with `.htaccess` files and should function automatically with AntCMS.
 
-For all of the above web servers are compatible with `.htaccess` files and should automatically work correctly with AntCMS.
+*   **Note:** If using **OpenLitespeed**, you must reload the service after making changes for the server to recognize the `.htaccess` file.
 
-**Note:** OpenLitespeed will require you to reload the service before it reads the `.htaccess` file for AntCMS.
+---
 
 ## NGINX
+We provide a [pre-configured nginx.conf](https://github.com/AntCMS-org/AntCMS/blob/main/configs/nginx.conf) template for use with NGINX.
 
-For NGINX we have a [nginx.conf](https://github.com/AntCMS-org/AntCMS/blob/main/configs/nginx.conf) template provided.
-At the moment, this is not yet a tested & validated configuration.
+*   **Status:** Please note that this configuration is currently provided as a reference and has not yet been fully tested or validated in production environments.
+
+---
 
 ## Caddy
+AntCMS is proven to work successfully with the Caddy web server.
 
-AntCMS has been tested and validated to work when paired with Caddy.
-The default Caddy behavior for PHP applications is compatible, however relying on this will leave you without functionality like asset and image compression.
+*   **Standard Configuration:** While standard Caddy behavior for PHP applications is compatible, it does not automatically include features like asset and image compression.
+*   **Recommended Configuration:** For full functionality (including proper routing for assets), we provide a [pre-built caddyfile](https://github.com/AntCMS-org/AntCMS/blob/main/configs/caddyfile).
 
-For your convenience, a pre-built [caddyfile](https://github.com/AntCMS-org/AntCMS/blob/main/configs/caddyfile) is available which will ensure all routing behaves as originally intended.
+**Important Note:** ETags are currently incompatible with Caddy and are automatically disabled in this environment. Consequently, using Caddy will result in reduced caching capabilities for assets.
 
-**Note:** ETags are broken in AntCMS when paired with Caddy and are automatically disabled. Due to this, using Caddy will result in reduced caching capabilities for assets.
+---
 
-## Development servers
+## Development Servers
+The following environments are supported for local development:
 
- - PHP Local Development Server (without asset delivery).
- - AntCMS includes a configuration for DDEV which can be used to quickly start a development instance of AntCMS.
+*   **PHP Local Development Server:** Useful for quick testing (Note: does not include asset delivery).
+*   **DDEV:** AntCMS includes a dedicated configuration for DDEV, allowing you to spin up a fully-functional development instance quickly.

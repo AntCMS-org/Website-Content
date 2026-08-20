@@ -1,115 +1,33 @@
 --AntCMS--
-Title: Markdown support
+Title: Markdown Support
 Author: The AntCMS Team
-Description: Learn about what Markdown syntax and features AntCMS supports.
+Description: Learn about the Markdown syntax and features supported by AntCMS.
 --AntCMS--
 
-## Markdown
+# Markdown Support
 
-AntCMS utilizes markdown to streamline the process of creating website content, eliminating the need for advanced and complex content editors. This allows for an efficient writing experience, where users can write without interruption, as styling can be added directly to the content as it is being written.
+AntCMS utilizes Markdown to streamline the creation of website content. By using a standard markup language, we eliminate the need for complex, heavy-duty content editors, allowing you to focus entirely on writing while styling is applied directly through your text.
 
-Not sure what markdown is? Here's a [cheat sheet](https://www.markdownguide.org/cheat-sheet/) on it's syntax, that same website also offers more insight into what markdown is and detailed guides for writing in markdown. Once you learn the markdown syntax, it's very easy to quickly write content with it.
+## Why Use Markdown?
 
-AntCMS supports the full basic markdown syntax, plus added support for the GitHub Flavored Markdown (GFM) and some additional options. Here is a code example of all syntax AntCMS supports with the rendered example below:
+Markdown provides an efficient and distraction-free experience. It allows authors to:
+*   **Write Fluidly:** Focus on the narrative without switching between different tools or menus.
+*   **Maintain Consistency:** Since styles are embedded in the markup, content remains consistent across different pages.
+*   **Easy Management:** Because it is a plain-text format, your content remains highly portable and easy to manage via version control. (We have a [plugin for that!](https://github.com/AntCMS-org/GitHub-Sync))
 
-```markdown
-## Basic Syntax
-## Headers!
+## Getting Started with Markdown
 
-**Bold text**, *italicized text*, ~~striked out text~~
+If you are new to Markdown, it is an intuitive way to format text using simple characters (like `**` for bold or `###` for headers). 
 
-> block quotes
+For those just starting out, we recommend the following resource:
+*   [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/): A quick reference guide for common syntax and styling.
 
-1. Ordered lists
-2. Hey look, a second item!
+## Supported Features
 
-- Unordered lists
-- Hey, it's another item!
+AntCMS supports a wide range of Markdown features to ensure your content looks great:
 
-`code blocks`
+*   **Standard Syntax:** Full support for headers, bold/italic text, lists, and blockquotes.
+*   **Extended Elements:** Inclusion of emojis and various GitHub-flavored markdown extras.
+*   **Media & Links:** Seamless integration of images and external/internal links.
 
-Horizontal rules:
-
----
-
-Links: [title](https://www.example.com)
-
-Pictures:
-![alt text](https://picsum.photos/256)
-
-## Extended Syntax
-
-~~Strikethrough.~~
-
-Tables:
-
-| Syntax | Description |
-| ----------- | ----------- |
-| Header | Title |
-| Paragraph | Text | 
-
-Fenced code blocks:
-Note: we can't put the codeblock here inside of a codeblock, so you'll just have to trust us :wink:
-
-Task lists:
-- [x] This one is done
-- [ ] But, this one isn't
-
-Emoji support! :joy:
-
-And finally.. emeded content, by putting a URL on a line of it's own, the content will automatically be embeded in the page.
-Note: support depends on what site the content is on, but AntCMS will always fallback to a regular link
-
-https://www.youtube.com/watch?v=dQw4w9WgXcQ
-
-```
-
-And now the same content, but rendered through AntCMS:
-
-## Basic Syntax
-## Headers!
-
-**Bold text**, *italicized text*, ~~striked out text~~
-
-> block quotes
-
-1. Ordered lists
-2. Hey look, a second item!
-
-- Unordered lists
-- Hey, it's another item!
-
-`code blocks`
-
-Horizontal rules:
-
----
-
-Links: [title](https://www.example.com)
-
-Pictures:
-![alt text](https://picsum.photos/256)
-
-## Extended Syntax
-
-~~Strikethrough.~~
-
-Tables:
-
-| Syntax | Description |
-| ----------- | ----------- |
-| Header | Title |
-| Paragraph | Text | 
-
-
-
-Task lists:
-- [x] This one is done
-- [ ] But, this one isn't
-
-Emoji support! :joy:
-
-And finally… embedded content, by putting a URL on a line of it's own, the content will automatically be embeded in the page.
-Note: support depends on what site the content is on, but AntCMS will always fallback to a regular link
-
-https://www.youtube.com/watch?v=dQw4w9WgXcQ
+By providing a robust Markdown experience, AntCMS ensures that crafting high-quality content is as straightforward as possible.

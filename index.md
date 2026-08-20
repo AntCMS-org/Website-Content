@@ -6,35 +6,48 @@ NavItem: true
 --AntCMS--
 
 # AntCMS
+**High-performance flat-file CMS designed for speed.**
 
-AntCMS is a flat-file CMS that's built to have very low system resource usage while providing website speeds rivaling a static website.
+AntCMS is a lightweight, flat-file CMS that's designed to be powerful, inexpensive on system resources, blazingly fast, and to do so without requiring you to configure it.
 
-## Features
+---
 
- - Built in support for gzip, brotli, and zstd compression.
- - Automatic compression for text-based assets (JS, HTML, CSS, ect).
- - Automatic image compression for JPEG, JPG, PNG, and WEBP image formats.
- - Insanely fast with zero tuning.
- - Minimal load on system resources.
- - Easy SEO with automatic handling of the robots.txt and sitemap files.
- - Automatic usage of ETags when serving assets to allow client-side caching.
- - Support for custom themes.
- - Per-theme additional styles applied to Markdown content.
- - Plugin support.
- - Uses Markdown to write content and YAML for the infrequently needed configuration setup.
+## Core Features
 
-## System Requirements
+### ⚡ Performance & Optimization
+*   **Blazing Fast:** Optimized for extreme speed with zero manual tuning required.
+*   **Low Overhead:** Engineered to run efficiently on even the most modest server hardware.
+*   **Smart Caching:** Automatic use of **ETags** during asset delivery to maximize client-side caching.
 
- - PHP 8.2 or greater
- - PHP Extensions: `curl`, `dom`, `mbstring`
+### 🛠️ Built-in Automation
+*   **Auto-Compression:** Native support for `gzip`, `brotli`, and `zstd`.
+*   **Asset Management:** Automatically compresses text-based assets (JS, HTML, CSS) and common image formats (JPEG, JPG, PNG, WEBP).
+*   **SEO Ready:** Automated handling of `robots.txt` and `sitemap.xml` files for out-of-the-box visibility.
 
-## Extensions for Improved Performance
+### 🎨 Content & Customization
+*   **Simple Workflow:** Write content in **Markdown** and manage configuration via **YAML**.
+*   **Theme Support:** Fully customizable themes with support for unique styles applied specifically to Markdown content.
+*   **Extensible:** A robust plugin system allows you to expand functionality as your site grows.
 
-For improved performance, the following PHP extensions are suggested:
+---
 
- - `zstd` for zstd compression.
- - `brotli` for brotli compression.
- - `zlib` for gzip / deflate compression.
- - `gd` for automatic image compression.
- - `opcache` as it optimizes all PHP applications & in AntCMS allows for a faster caching implementation to be used.
- - `ctype`
+## Minimum Requirements
+To run AntCMS, your server must meet the following minimum requirements:
+- **PHP Version:** 8.2 or higher
+- **Required Extensions:** `curl`, `dom`, `mbstring`
+
+### Recommended Extensions for Performance
+For those looking to squeeze every bit of performance out of their instance, we recommend installing the following additional PHP extensions:
+
+| Extension | Purpose |
+| :--- | :--- |
+| `zstd` | High-performance Zstandard compression |
+| `brotli` | Advanced Brotli compression |
+| `zlib` | Standard Gzip / Deflate support |
+| `gd` | Enhanced automatic image processing |
+| `opcache` | Optimizes PHP execution and enables advanced caching features. |
+| `ctype` | Core type checking functionality |
+
+---
+
+[Explore the Documentation](#) • [View on GitHub](#) • [Get Started](#)

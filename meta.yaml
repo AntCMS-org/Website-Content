@@ -1,5 +1,6 @@
 pageOrder:
   index: 1
-  Documentation: 3
-  development: 4
-  plugins: 2
+  Documentation: 4
+  development: 5
+  plugins: 3
+  changelog: 2

@@ -23,6 +23,8 @@ All plugins reside under the `Plugins` folder.
 - AntCMS uses [FlightPHP](https://docs.flightphp.com/?lang=en) for routing, routes should be registered per their docs.
 - Create a `Templates` directory in your plugin folder to have it automatically be added to the twig loader.
 
+---
+
 ## Hooks
 
  - Hooks should be created, registered, and fired using the `AntCMS\HookController` class.
