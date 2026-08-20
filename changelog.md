@@ -15,7 +15,7 @@ NavItem: true
 **✨ New Features & Enhancements**
 - **CLI System:** Introduced a CLI system for AntCMS which is modular and loads commands from plugins.
 - **Markdown Support:** Added support for attributes within markdown content.
-- **Cache Management:** Added new hooks for cache retrieval and optimized query key generation.
+- **Cache Management:** Added new hooks for cache retrieval and modified cache key generation.
 
 **🐛 Bug Fixes**
 - **Page Ordering:** More fixes to the how page order is determined and a general cleaning of the related code.
@@ -26,7 +26,7 @@ NavItem: true
 
 ---
 
-*Note: This section covers active development and hotfixes rolled out since the last major versioning.*
+*Note: This section covers active development since the last published release.*
 
 ---
 

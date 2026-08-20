@@ -50,4 +50,4 @@ For those looking to squeeze every bit of performance out of their instance, we 
 
 ---
 
-[Explore the Documentation](#) • [View on GitHub](#) • [Get Started](#)
+[View on GitHub](https://github.com/AntCMS-org/AntCMS) • [Get Started](/docs/gettingstarted)
