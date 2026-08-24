@@ -7,15 +7,17 @@ NavItem: true
 
 # AntCMS Release History
 
----
+## 0.4.4
+*Released: August 24, 2026*
+**Please be aware that the `cron.php` file has been replaced and cron now is run via `cli.php runCron`.**
 
-## Preview Builds (Post-0.4.3)
-*Ongoing development between releases*
+**🛡️ Security**
+- **Asset Delivery:** Added missing path restrictions which could allow Arbitrary File Read on some server configurations. (Awaiting CVE)
 
 **✨ New Features & Enhancements**
 - **CLI System:** Introduced a CLI system for AntCMS which is modular and loads commands from plugins.
 - **Markdown Support:** Added support for attributes within markdown content.
-- **Cache Management:** Added new hooks for cache retrieval and modified cache key generation.
+- **Cache Management:** Added new hooks for cache retrieval and modification.
 
 **🐛 Bug Fixes**
 - **Page Ordering:** More fixes to the how page order is determined and a general cleaning of the related code.
@@ -23,12 +25,6 @@ NavItem: true
 **🛠 Improvements & Infrastructure**
 - **Environment Integration:** Improved integration with the DDEV toolset.
 - **Under the hood:** Improvements to code quality and style as well as regular dependency updates.
-
----
-
-*Note: This section covers active development since the last published release.*
-
----
 
 ## Version 0.4.3
 *Released: January 19, 2026*
