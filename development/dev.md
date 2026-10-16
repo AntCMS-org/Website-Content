@@ -34,9 +34,11 @@ Next, you'll want to start the DDEV container for AntCMS.
 ddev start
 ```
 
+Assuming you ran into no errors, you should now find your AntCMS developer instance available at [https://antcms.ddev.site](https://antcms.ddev.site).
+
 ---
 
-### Using the AntCMS CLI /w DDEV
+### Using the AntCMS CLI With DDEV
 
 For convenience, the AntCMS CLI is mapped to a command named `antcli` inside DDEV, autofill is provided for the default AntCMS commands.
 Custom commands will work without problem they just do not have autofill working at this moment.
@@ -48,6 +50,10 @@ Examples:
 
 ---
 
-#### And That's It!
+#### Running tests
 
-Assuming you ran into no errors, you should now find your AntCMS developer instance available at [https://antcms.ddev.site](https://antcms.ddev.site).
+`ddev composer test`
+
+#### Fixing the code styling
+
+`ddev composer run-cs`

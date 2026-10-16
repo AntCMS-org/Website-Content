@@ -2,7 +2,7 @@
 Title: AntCMS
 Author: The AntCMS Team
 Description: AntCMS is a very fast CMS which provides easy SEO, low system resource usage, and makes writing content easy utilizing Markdown. 
-NavItem: true
+NavItem: false
 --AntCMS--
 
 # AntCMS
